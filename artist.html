@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AiRiaのメンバー紹介。あいとリア、二人のボーカリストのプロフィールをご紹介します。">
+    <meta name="keywords" content="AiRia,あい,リア,メンバー,プロフィール,ボーカリスト">
+    
+    <meta property="og:title" content="ARTIST - AiRia Official Website">
+    <meta property="og:description" content="AiRiaのメンバー紹介">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://airia-official.com/artist.html">
+    <meta property="og:image" content="/images/og-artist.jpg">
+    
+    <title>ARTIST - AiRia Official Website</title>
+    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/artist.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo">
+                <a href="./">AiRia</a>
+            </h1>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="./" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="./artist.html" class="nav-link active">ARTIST</a></li>
+                    <li class="nav-item"><a href="./music.html" class="nav-link">MUSIC</a></li>
+                    <li class="nav-item"><a href="./live.html" class="nav-link">LIVE</a></li>
+                    <li class="nav-item"><a href="./news.html" class="nav-link">NEWS</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link">CONTACT</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger" type="button" aria-label="メニューを開く">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2 class="page-title">ARTIST</h2>
+            </div>
+        </section>
+
+        <section class="members section">
+            <div class="container">
+                <div class="members-grid" id="members-grid">
+                    <!-- Member profiles will be loaded here -->
+                    <div class="loading">読み込み中...</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="biography section">
+            <div class="container">
+                <h3 class="section-title">BIOGRAPHY</h3>
+                <div class="bio-content">
+                    <p>AiRiaは、異なる音楽的背景を持つ二人のボーカリスト、あいとリアによって結成された女性ボーカルユニットです。</p>
+                    <p>あいのクラシック音楽で培われた繊細で透明感のある歌声と、リアのジャズやR&Bの影響を受けたパワフルでグルーヴィーな歌声が融合し、独自の音楽世界を創り出しています。</p>
+                    <p>2024年にデビューし、その個性的なハーモニーと心に響く楽曲で、多くのファンを魅了し続けています。ライブパフォーマンスでは、二人の息の合ったステージングと観客との一体感を大切にし、音楽を通じて人々の心に寄り添うことを目指しています。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery section">
+            <div class="container">
+                <h3 class="section-title">PHOTO GALLERY</h3>
+                <div class="photo-gallery" id="photo-gallery">
+                    <div class="gallery-item">
+                        <img src="./images/gallery/airia-01.jpg" alt="AiRia" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/gallery/airia-02.jpg" alt="AiRia" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/gallery/airia-03.jpg" alt="AiRia" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/gallery/airia-04.jpg" alt="AiRia" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li><a href="./">HOME</a></li>
+                    <li><a href="./artist.html">ARTIST</a></li>
+                    <li><a href="./music.html">MUSIC</a></li>
+                    <li><a href="./live.html">LIVE</a></li>
+                    <li><a href="./news.html">NEWS</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://twitter.com/airia_official" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a href="https://instagram.com/airia_official" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://youtube.com/@airia_official" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="https://tiktok.com/@airia_official" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 AiRia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Member Detail Modal -->
+    <div class="modal" id="member-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" aria-label="閉じる">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Member details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/artist.js"></script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+/* Live Page Specific Styles */
+
+/* Page Header */
+.page-header {
+    background-color: var(--bg-secondary);
+    padding: 120px 0 60px;
+    margin-top: var(--header-height);
+    text-align: center;
+}
+
+.page-title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Lives List */
+.lives-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.live-item {
+    background-color: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 30px;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.live-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Date Block */
+.live-date-block {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    min-width: 100px;
+}
+
+.live-month {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.live-day {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.live-year {
+    font-size: 1.4rem;
+    margin-top: 5px;
+}
+
+/* Live Info */
+.live-info {
+    flex: 1;
+}
+
+.live-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+}
+
+.live-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.live-detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-secondary);
+    font-size: 1.6rem;
+}
+
+.detail-icon {
+    width: 20px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.live-description {
+    margin-top: 15px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Ticket Button */
+.live-ticket {
+    display: flex;
+    align-items: center;
+}
+
+.ticket-btn {
+    padding: 12px 30px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.ticket-btn:hover {
+    background-color: #45B7AA;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(78, 205, 196, 0.3);
+}
+
+.ticket-sold-out {
+    padding: 12px 30px;
+    background-color: #E0E0E0;
+    color: #999;
+    border-radius: 30px;
+    font-weight: 500;
+    cursor: not-allowed;
+}
+
+/* Past Lives Specific */
+.past-lives .live-item {
+    opacity: 0.8;
+}
+
+.past-lives .live-date-block {
+    background-color: #999;
+}
+
+.past-lives .live-title {
+    color: var(--text-secondary);
+}
+
+/* No Content Message */
+.no-content {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.8rem;
+    padding: 60px 20px;
+}
+
+/* Gallery Modal */
+.gallery-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+}
+
+.gallery-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-content {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.gallery-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.gallery-close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 4rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.gallery-close:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 3.2rem;
+    }
+
+    .live-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .live-date-block {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .live-title {
+        font-size: 2rem;
+    }
+
+    .live-details {
+        align-items: center;
+    }
+
+    .live-detail {
+        justify-content: center;
+    }
+
+    .live-ticket {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header {
+        padding: 100px 0 40px;
+    }
+
+    .live-month {
+        font-size: 1.2rem;
+    }
+
+    .live-day {
+        font-size: 2.4rem;
+    }
+
+    .live-title {
+        font-size: 1.8rem;
+    }
+
+    .live-detail {
+        font-size: 1.4rem;
+    }
+
+    .ticket-btn,
+    .ticket-sold-out {
+        padding: 10px 24px;
+        font-size: 1.4rem;
+    }
+}

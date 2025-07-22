@@ -1,0 +1,307 @@
+/* Artist Page Specific Styles */
+
+/* Page Header */
+.page-header {
+    background-color: var(--bg-secondary);
+    padding: 120px 0 60px;
+    margin-top: var(--header-height);
+    text-align: center;
+}
+
+.page-title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Members Grid */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.member-card {
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+}
+
+.member-image {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.member-card:hover .member-image img {
+    transform: scale(1.1);
+}
+
+.member-name {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.member-name-en {
+    font-size: 2rem;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.member-bio {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Biography Section */
+.bio-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bio-content p {
+    font-size: 1.8rem;
+    line-height: 2;
+    margin-bottom: 30px;
+    color: var(--text-primary);
+}
+
+/* Photo Gallery */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    aspect-ratio: 4/3;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+}
+
+.modal.active {
+    display: block;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--bg-primary);
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: slideUp 0.3s ease;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 3rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 1;
+}
+
+.modal-close:hover {
+    color: var(--text-primary);
+}
+
+.modal-body {
+    padding: 60px 40px 40px;
+}
+
+.modal-member {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.modal-member-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.modal-member-image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.modal-member-info h3 {
+    font-size: 3.2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.modal-member-info .member-name-en {
+    font-size: 2rem;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.modal-member-info p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 30px;
+}
+
+.member-social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.member-social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-secondary);
+    border-radius: 50%;
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.member-social-links a:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 3.2rem;
+    }
+
+    .members-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .member-name {
+        font-size: 2.8rem;
+    }
+
+    .modal-member {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .modal-member-image {
+        max-width: 200px;
+    }
+
+    .modal-body {
+        padding: 60px 20px 30px;
+    }
+
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header {
+        padding: 100px 0 40px;
+    }
+
+    .bio-content p {
+        font-size: 1.6rem;
+    }
+
+    .member-social-links {
+        justify-content: center;
+    }
+}
