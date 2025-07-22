@@ -1,0 +1,50 @@
+{
+  "events": [
+    {
+      "id": "live-001",
+      "title": "AiRia Spring Live 2024",
+      "type": "live",
+      "date": "2024-03-15",
+      "time": "19:00",
+      "venue": "渋谷ライブハウス O-EAST",
+      "description": "AiRiaの春のライブコンサート。新曲を含む盛りだくさんのセットリストでお届けします！",
+      "ticketUrl": "https://eplus.jp/airia-spring-live-2024",
+      "image": "/images/events/spring-live-2024.jpg",
+      "status": "upcoming"
+    },
+    {
+      "id": "street-001",
+      "title": "渋谷ストリートライブ",
+      "type": "street",
+      "date": "2024-02-25",
+      "time": "15:00",
+      "venue": "渋谷駅前ハチ公広場",
+      "description": "みなさんに気軽に楽しんでもらえる路上ライブです。お気軽にお越しください！",
+      "image": "/images/events/street-live-shibuya.jpg",
+      "status": "upcoming"
+    },
+    {
+      "id": "streaming-001",
+      "title": "AiRia Online Live",
+      "type": "streaming",
+      "date": "2024-02-14",
+      "time": "20:00",
+      "venue": "YouTube Live",
+      "description": "バレンタインデー特別配信ライブ。チャットでのリクエストも受け付けます♪",
+      "externalUrl": "https://youtube.com/@airia_official",
+      "image": "/images/events/valentine-streaming.jpg",
+      "status": "upcoming"
+    },
+    {
+      "id": "live-past-001",
+      "title": "AiRia Winter Concert",
+      "type": "live",
+      "date": "2023-12-24",
+      "time": "18:00",
+      "venue": "新宿ReNY",
+      "description": "クリスマスイブスペシャルライブ。たくさんのファンの皆様にお越しいただきました！",
+      "image": "/images/events/winter-concert-2023.jpg",
+      "status": "past"
+    }
+  ]
+}

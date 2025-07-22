@@ -3,132 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="女性ボーカルユニットAiRiaのオフィシャルサイト。あいとリアによる音楽活動、ライブ情報、最新ニュースをお届けします。">
-    <meta name="keywords" content="AiRia,あい,リア,女性ボーカルユニット,音楽,ライブ">
-    
-    <meta property="og:title" content="AiRia Official Website">
-    <meta property="og:description" content="女性ボーカルユニットAiRiaのオフィシャルサイト">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://airia-official.com">
-    <meta property="og:image" content="/images/og-image.jpg">
-    
-    <title>AiRia Official Website</title>
-    
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/home.css">
-    
+    <title>AiRia - 女性ツインボーカルユニット</title>
+    <meta name="description" content="AiRiaは女性ツインボーカルユニット。あいとリアの美しいハーモニーをお楽しみください。">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
     <header class="header">
-        <div class="header-inner">
-            <h1 class="logo">
-                <a href="./">AiRia</a>
-            </h1>
-            <nav class="nav" id="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="./" class="nav-link active">HOME</a></li>
-                    <li class="nav-item"><a href="./artist.html" class="nav-link">ARTIST</a></li>
-                    <li class="nav-item"><a href="./music.html" class="nav-link">MUSIC</a></li>
-                    <li class="nav-item"><a href="./live.html" class="nav-link">LIVE</a></li>
-                    <li class="nav-item"><a href="./news.html" class="nav-link">NEWS</a></li>
-                    <li class="nav-item"><a href="./contact.html" class="nav-link">CONTACT</a></li>
-                </ul>
-            </nav>
-            <button class="hamburger" id="hamburger" type="button" aria-label="メニューを開く">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1 class="logo">AiRia</h1>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-        </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="/" class="nav-link active">ホーム</a></li>
+                <li><a href="#members" class="nav-link">メンバー</a></li>
+                <li><a href="#events" class="nav-link">ライブ</a></li>
+                <li><a href="#social" class="nav-link">SNS</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-image">
-                <img src="./images/hero-main.jpg" alt="AiRia" loading="lazy">
-            </div>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
             <div class="hero-content">
-                <h2 class="hero-title">Welcome to AiRia</h2>
-                <p class="hero-subtitle">あいとリアが織りなす音楽の世界へ</p>
-            </div>
-        </section>
-
-        <section class="latest-news section">
-            <div class="container">
-                <h2 class="section-title">LATEST NEWS</h2>
-                <div class="news-list" id="latest-news">
-                    <!-- News items will be loaded here -->
-                    <div class="loading">読み込み中...</div>
+                <div class="hero-text">
+                    <h2 class="hero-title">AiRia</h2>
+                    <p class="hero-subtitle">女性ツインボーカルユニット</p>
+                    <p class="hero-description">
+                        あいとリアの美しいハーモニーが織りなす<br>
+                        感動的な音楽体験をお届けします
+                    </p>
                 </div>
-                <div class="section-footer">
-                    <a href="./news.html" class="btn btn-primary">すべてのニュースを見る</a>
+                <div class="hero-visual">
+                    <div class="hero-gradient"></div>
                 </div>
             </div>
         </section>
 
-        <section class="next-live section">
+        <!-- Members Section -->
+        <section class="members" id="members">
             <div class="container">
-                <h2 class="section-title">NEXT LIVE</h2>
-                <div class="live-info" id="next-live">
-                    <!-- Next live info will be loaded here -->
-                    <div class="loading">読み込み中...</div>
-                </div>
-                <div class="section-footer">
-                    <a href="./live.html" class="btn btn-primary">ライブスケジュールを見る</a>
+                <h3 class="section-title">Members</h3>
+                <div class="members-grid" id="membersGrid">
+                    <!-- Members will be loaded dynamically -->
                 </div>
             </div>
         </section>
 
-        <section class="social-feed section">
+        <!-- Events Section -->
+        <section class="events" id="events">
             <div class="container">
-                <h2 class="section-title">SOCIAL</h2>
-                <div class="social-links">
-                    <a href="https://twitter.com/airia_official" target="_blank" rel="noopener noreferrer" class="social-link">
-                        <span class="social-icon">Twitter</span>
-                    </a>
-                    <a href="https://instagram.com/airia_official" target="_blank" rel="noopener noreferrer" class="social-link">
-                        <span class="social-icon">Instagram</span>
-                    </a>
-                    <a href="https://youtube.com/@airia_official" target="_blank" rel="noopener noreferrer" class="social-link">
-                        <span class="social-icon">YouTube</span>
-                    </a>
-                    <a href="https://tiktok.com/@airia_official" target="_blank" rel="noopener noreferrer" class="social-link">
-                        <span class="social-icon">TikTok</span>
-                    </a>
+                <h3 class="section-title">Live Schedule</h3>
+                <div class="events-calendar" id="eventsCalendar">
+                    <!-- Events will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Section -->
+        <section class="social" id="social">
+            <div class="container">
+                <h3 class="section-title">Follow Us</h3>
+                <div class="social-links" id="socialLinks">
+                    <!-- Social links will be loaded dynamically -->
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-nav">
-                <ul class="footer-nav-list">
-                    <li><a href="./">HOME</a></li>
-                    <li><a href="./artist.html">ARTIST</a></li>
-                    <li><a href="./music.html">MUSIC</a></li>
-                    <li><a href="./live.html">LIVE</a></li>
-                    <li><a href="./news.html">NEWS</a></li>
-                    <li><a href="./contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <a href="https://twitter.com/airia_official" target="_blank" rel="noopener noreferrer">Twitter</a>
-                <a href="https://instagram.com/airia_official" target="_blank" rel="noopener noreferrer">Instagram</a>
-                <a href="https://youtube.com/@airia_official" target="_blank" rel="noopener noreferrer">YouTube</a>
-                <a href="https://tiktok.com/@airia_official" target="_blank" rel="noopener noreferrer">TikTok</a>
-            </div>
-            <div class="footer-copyright">
-                <p>&copy; 2025 AiRia. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">&copy; 2024 AiRia. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="./js/common.js"></script>
-    <script src="./js/home.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+{
+  "members": [
+    {
+      "id": "ai",
+      "name": "あい",
+      "displayName": "Ai",
+      "bio": "AiRiaのメインボーカルを担当。透明感のある歌声と表現力豊かなパフォーマンスで、多くのファンを魅了している。音楽への情熱と創造性を持ち、楽曲制作にも積極的に参加している。",
+      "image": "/images/members/ai.jpg",
+      "socialLinks": {
+        "instagram": "https://instagram.com/ai_airia",
+        "twitter": "https://twitter.com/ai_airia"
+      }
+    },
+    {
+      "id": "ria",
+      "name": "リア",
+      "displayName": "Ria",
+      "bio": "AiRiaのセカンドボーカルを担当。パワフルで感情豊かな歌声が特徴。ダンスも得意で、ステージ上での存在感は抜群。ファンとのコミュニケーションを大切にし、温かい人柄で愛されている。",
+      "image": "/images/members/ria.jpg",
+      "socialLinks": {
+        "instagram": "https://instagram.com/ria_airia",
+        "twitter": "https://twitter.com/ria_airia"
+      }
+    }
+  ]
+}
